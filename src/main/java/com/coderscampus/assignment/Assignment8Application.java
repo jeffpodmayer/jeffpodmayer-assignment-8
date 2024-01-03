@@ -15,7 +15,7 @@ public class Assignment8Application {
 		
 		List<CompletableFuture<List<Integer>>> numbers = new ArrayList<>();
 		   
-		for (int j=0; j<1000; j++) {
+		for (int i=0; i<3; i++) {
 			CompletableFuture<List<Integer>> numberList = 
 					CompletableFuture.supplyAsync(() -> new Assignment8(), service)
 							 		 .thenApplyAsync(a8 -> a8.getNumbers(), getNumbersService);			

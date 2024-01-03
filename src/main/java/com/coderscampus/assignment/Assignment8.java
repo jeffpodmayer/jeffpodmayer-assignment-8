@@ -40,7 +40,7 @@ public class Assignment8 {
             start = i.get();
             end = i.addAndGet(1000);
 
-  //          System.out.println("Starting to fetch records " + start + " to " + (end));
+            System.out.println("Starting to fetch records " + start + " to " + (end));
         }
         // force thread to pause for half a second to simulate actual Http / API traffic
         // delay
@@ -54,7 +54,7 @@ public class Assignment8 {
                 .forEach(n -> {
                     newList.add(numbers.get(n));
                 });
-//        System.out.println("Done Fetching records " + start + " to " + (end));
+        System.out.println("Done Fetching records " + start + " to " + (end));
         return newList;
     }
     
