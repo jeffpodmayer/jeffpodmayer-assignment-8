@@ -35,6 +35,7 @@ public class Assignment8 {
      * @return Integers from the parsed txt file, 1,000 numbers at a time
      */
     public List<Integer> getNumbers() {
+    	
         int start, end;
         synchronized (i) {
             start = i.get();
@@ -54,6 +55,7 @@ public class Assignment8 {
                 .forEach(n -> {
                     newList.add(numbers.get(n));
                 });
+        
         System.out.println("Done Fetching records " + start + " to " + (end));
         return newList;
     }
